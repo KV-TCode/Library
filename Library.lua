@@ -5208,6 +5208,46 @@ local aa = {
     [58] = function()
         local c, U, a2, a3, a4 = b(58)
         return {
+            Name = "Dark Violet",
+            Accent = Color3.fromRGB(48, 3, 86),
+            AcrylicMain = Color3.fromRGB(0, 0, 0),
+            AcrylicBorder = Color3.fromRGB(170, 77, 248),
+            AcrylicGradient = ColorSequence.new(Color3.fromRGB(0, 0, 0), Color3.fromRGB(0, 0, 0)),
+            AcrylicNoise = 0.9,
+            TitleBarLine = Color3.fromRGB(170, 77, 248),
+            Tab = Color3.fromRGB(255, 255, 255),
+            Element = Color3.fromRGB(52, 52, 52),
+            ElementBorder = Color3.fromRGB(170, 77, 248),
+            InElementBorder = Color3.fromRGB(170, 77, 248),
+            ElementTransparency = 0.87,
+            ToggleSlider = Color3.fromRGB(255, 255, 255),
+            ToggleToggled = Color3.fromRGB(255, 255, 255),
+            SliderRail = Color3.fromRGB(255, 255, 255),
+            DropdownFrame = Color3.fromRGB(48, 3, 86),
+            DropdownHolder = Color3.fromRGB(0, 0, 0),
+            DropdownBorder = Color3.fromRGB(170, 77, 248),
+            DropdownOption = Color3.fromRGB(170, 77, 248),
+            Keybind = Color3.fromRGB(48, 3, 86),
+            Input = Color3.fromRGB(48, 3, 86),
+            InputFocused = Color3.fromRGB(10, 10, 10),
+            InputIndicator = Color3.fromRGB(150, 150, 150),
+            Dialog = Color3.fromRGB(0, 0, 0),
+            DialogHolder = Color3.fromRGB(0, 0, 0),
+            DialogHolderLine = Color3.fromRGB(170, 77, 248),
+            DialogButton = Color3.fromRGB(52, 52, 52),
+            DialogButtonBorder = Color3.fromRGB(170, 77, 248),
+            DialogBorder = Color3.fromRGB(170, 77, 248),
+            DialogInput = Color3.fromRGB(55, 55, 55),
+            DialogInputLine = Color3.fromRGB(160, 160, 160),
+            Text = Color3.fromRGB(240, 240, 240),
+            SubText = Color3.fromRGB(170, 170, 170),
+            Hover = Color3.fromRGB(170, 77, 248),
+            HoverChange = 0.07
+        }
+    end,
+    [59] = function()
+        local c, U, a2, a3, a4 = b(59)
+        return {
             Name = "Vampire",
             Accent = Color3.fromRGB(139, 0, 0),
             AcrylicMain = Color3.fromRGB(0, 0, 0),
@@ -5245,8 +5285,8 @@ local aa = {
             HoverChange = 0.07
         }
     end,
-    [59] = function()
-        local c, U, a2, a3, a4 = b(59)
+    [60] = function()
+        local c, U, a2, a3, a4 = b(60)
         return {
             Name = "Rainbow",
             Accent = Color3.new(1, 0, 0),
@@ -5285,8 +5325,8 @@ local aa = {
             HoverChange = 0.04
         }
     end,
-    [60] = function()
-        local c, U, a2, a3, a4 = b(60)
+    [61] = function()
+        local c, U, a2, a3, a4 = b(61)
         return {
             Name = "Luffy",
             Accent = Color3.fromRGB(0, 102, 204),
@@ -5325,8 +5365,8 @@ local aa = {
             HoverChange = 0.04
         }
     end,
-    [61] = function()
-        local c, U, a2, a3, a4 = b(61)
+    [62] = function()
+        local c, U, a2, a3, a4 = b(62)
         return {
             Name = "Green",
             Accent = Color3.fromRGB(0, 128, 0),
