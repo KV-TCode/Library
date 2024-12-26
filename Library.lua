@@ -1908,7 +1908,7 @@ local aa = {
 		function k.UpdateTheme()
 			for m, n in next, k.Registry do
 				for o, p in next, n.Properties do
-					m[o] = getgenv().Theme[p] or k.GetThemeProperty(p)
+					m[o] = k.GetThemeProperty(p)
 				end
 			end
 			for o, p in next, k.TransparencyMotors do
