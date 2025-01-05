@@ -151,7 +151,7 @@ local aa = {
 			end
 		end
 		x.Elements = z
-		function x.Window(a)
+		function x.CreateWindow(a)
 			if x.Window then
 				print("You cannot create more than one window.")
 				return
