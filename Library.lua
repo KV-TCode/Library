@@ -151,10 +151,9 @@ local aa = {
 			end
 		end
 		x.Elements = z
-		function x.CreateWindow(C, D)
-			assert(D.Title, "Window - Missing Title")
+		function x.Window(a)
 			if x.Window then
-				print"You cannot create more than one window."
+				print("You cannot create more than one window.")
 				return
 			end
 			x.MinimizeKey = D.MinimizeKey
@@ -1658,7 +1657,17 @@ local aa = {
 					L = v.Size.Y.Offset
 				end
 				local P, Q = M and j.ViewportSize.X or K, M and j.ViewportSize.Y or L
+				G:setGoal {
+                    X = l[O and "Instant" or "Spring"].new(P, {frequency = 6}),
+                    Y = l[O and "Instant" or "Spring"].new(Q, {frequency = 6})
+                }
 				v.Size = UDim2.fromOffset(P, Q)
+				if not N then
+					H:setGoal {
+						X = q(v.Position.X.Offset, {frequency = 6}),
+						Y = q(v.Position.Y.Offset, {frequency = 6})
+					}
+				end
 			end
             v.ChangeSize = function()
 				local P, Q = v.Size.X.Offset, v.Size.Y.Offset
@@ -2456,7 +2465,7 @@ local aa = {
 			local k, l, m = h.Library, {
 				Values = j.Values,
 				Value = j.Default,
-				Multi = j.Multi,
+				Multi = j.Multi or false,
 				Buttons = {},
 				Opened = false,
 				Type = "Dropdown",
@@ -2839,8 +2848,6 @@ local aa = {
 						l.Value[l.Values[D]] = true
 					else
 						l.Value = l.Values[D]
-					end
-					if not j.Multi then
 						break
 					end
 				end
@@ -3153,9 +3160,10 @@ local aa = {
 				ai("UICorner", {
 					CornerRadius = UDim.new(1, 0)
 				})
-			}), ai("TextLabel", {
+			}), ai("TextBox", {
 				FontFace = Font.new"rbxasset://fonts/families/GothamSSm.json",
 				Text = "Value",
+				ClearTextOnFocus = true,
 				TextSize = 12,
 				TextWrapped = true,
 				TextXAlignment = Enum.TextXAlignment.Right,
@@ -3168,7 +3176,7 @@ local aa = {
 					TextColor3 = "SubText"
 				}
 			})
-			local o = ai("Frame", {
+			ai("Frame", {
 				Size = UDim2.new(1, 0, 0, 4),
 				AnchorPoint = Vector2.new(1, 0.5),
 				Position = UDim2.new(1, -10, 0.5, 0),
