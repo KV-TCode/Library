@@ -3235,7 +3235,7 @@ local aa = {
                 end
             end)
             ah.AddSignal(n.FocusLost, function(p)
-                h:SetValue(tonumber(o.Text) or i.Value)
+                h:SetValue(tonumber(n.Text) or i.Value)
             end)
             h:SetValue(f.Default or f.Min)
             g.Options[e] = h
